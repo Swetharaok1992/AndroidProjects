@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.swetharao.finalproject.MenuFood">
+
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:text="COCKTAILS"
+        android:id="@+id/ck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/cmp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="CHAMPANGE"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/ck"
+        android:layout_alignLeft="@+id/ck"
+        android:layout_alignStart="@+id/ck" />
+
+    <Button
+        android:id="@+id/sodas"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="SODAS"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/cmp"
+        android:layout_alignLeft="@+id/cmp"
+        android:layout_alignStart="@+id/cmp" />
+
+    <Button
+        android:text="WINES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wine"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/sodas"
+        android:layout_alignLeft="@+id/sodas"
+        android:layout_alignStart="@+id/sodas"
+        android:layout_alignRight="@+id/sodas"
+        android:layout_alignEnd="@+id/sodas" />
+
+    <Button
+        android:text="RED WINE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbtn"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/wbtn"
+        android:layout_alignBottom="@+id/wbtn"
+        android:layout_toRightOf="@+id/gbtn" />
+
+    <Button
+        android:text="WHITE WINE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wbtn"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/gbtn"
+        android:layout_toStartOf="@+id/gbtn" />
+
+    <Button
+        android:text="GRAPE WINE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gbtn"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/wbtn"
+        android:layout_alignBottom="@+id/wbtn"
+        android:layout_alignRight="@+id/ck"
+        android:layout_alignEnd="@+id/ck" />
+
+
+</RelativeLayout>

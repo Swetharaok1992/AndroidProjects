@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="text"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="0dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/salary"
+        android:layout_below="@+id/age"
+        android:layout_alignStart="@+id/age"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="0dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/food2"
+        android:layout_alignBottom="@+id/diet"
+        android:layout_alignStart="@+id/food"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/gender"
+        android:layout_alignBottom="@+id/salary"
+        android:layout_toRightOf="@+id/salary" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/diet"
+        android:layout_alignTop="@+id/gender"
+        android:layout_toEndOf="@+id/gender" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/color"
+        android:layout_alignTop="@+id/diet"
+        android:layout_alignStart="@+id/name" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/food"
+        android:layout_marginEnd="47dp"
+        android:layout_alignTop="@+id/color"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

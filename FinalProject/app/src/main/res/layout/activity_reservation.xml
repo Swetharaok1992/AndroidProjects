@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reservation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.swetharao.finalproject.Reservation">
+
+    <TextView
+        android:text="RESERVE A TABLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="136dp"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/rName"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="NAME" />
+
+    <TextView
+        android:text="TABLE FOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/TableFor"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:text="Reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:id="@+id/Reserve"
+        android:layout_below="@+id/TableFor"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:layout_below="@+id/TableFor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/time" />
+
+    <TextView
+        android:text="TODAY @ [24 hr]"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_alignStart="@+id/TableFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/rName"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_marginTop="13dp"
+        android:id="@+id/tableEdit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView5"
+        android:layout_alignEnd="@+id/tableEdit"
+        android:layout_marginTop="21dp"
+        android:id="@+id/nameEdit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Phone number"
+        android:ems="10"
+        android:layout_below="@+id/time"
+        android:layout_toEndOf="@+id/rName"
+        android:layout_marginTop="11dp"
+        android:id="@+id/editText6" />
+
+</RelativeLayout>

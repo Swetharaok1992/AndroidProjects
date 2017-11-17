@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.swetharao.finalproject.Reservation">
+
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:text="SIDES"
+        android:id="@+id/sidesbtn" />
+
+    <Button
+        android:id="@+id/soupsbtn"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="SOUPS" />
+
+    <Button
+        android:id="@+id/starters"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="STARTERS" />
+
+    <Button
+        android:id="@+id/desserts"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="DESSERTS" />
+    <Button
+        android:id="@+id/main_course"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:text="MAIN COURSE" />
+
+    <Button
+        android:id="@+id/chef_spl"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:text="CHEF_SPECIAL" />
+
+</LinearLayout>
